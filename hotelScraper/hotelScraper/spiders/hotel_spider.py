@@ -5,7 +5,7 @@ import psycopg2
 class HotelSpider(scrapy.Spider):
     name = "hotel"
     start_urls = [
-        'https://www.kayak.co.in/San-Francisco-Hotels.13852.hotel.ksp'
+        'https://www.kayak.co.in/New-York-Hotels.15830.hotel.ksp'
     ]
 
     def parse(self, response):
@@ -14,7 +14,16 @@ class HotelSpider(scrapy.Spider):
 
         conn = psycopg2.connect("dbname='hotelScraper' user='postgres' host='localhost' password='root'")
         cur = conn.cursor()
-        # cur.execute("CREATE TABLE hotel_data (id serial PRIMARY KEY, title varchar, image varchar, rating varchar, price varchar, location varchar, amenities text);")
+        cur.execute(
+            "SELECT EXISTS(SELECT FROM pg_tables WHERE schemaname = 'public' AND tablename = 'hotel_data');"
+        )
+
+        check_table = cur.fetchone()[0]
+
+        if check_table:
+            print("Table already exists!!!")
+        else:
+            cur.execute("CREATE TABLE hotel_data (id serial PRIMARY KEY, title varchar, image varchar, rating varchar, price varchar, location varchar, amenities text);")
 
         for hotel in all_hotel_data:
 
