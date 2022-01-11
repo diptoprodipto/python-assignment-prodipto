@@ -49,6 +49,16 @@ scrapy crawl hotel
 ```
 ![Screenshot from 2022-01-11 11-09-02](https://user-images.githubusercontent.com/56860950/148900216-4534e692-0775-484c-8d3c-ab21c4be4e83.png)
 
+## Another way of running:
+- Clone the project and go to the project directory: python-assignment-prodipto/
+- Run the following command:
+``` bash
+pip install -r requirements.txt
+```
+- Finally run: 
+``` bash
+scrapy crawl hotel
+```
 # Ignore this section if there is no error regarding Python packages.
 ## Installing Python packages
 - Through Terminal:
