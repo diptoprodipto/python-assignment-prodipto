@@ -7,6 +7,10 @@
 - Postgres
 
 ## Installation process
+### Database configuration:
+- For installing Postgres and pgAdmin4
+
+### For running the project:
 - Clone the project.
 - Go to the following directory by using cd:
 ``` bash
