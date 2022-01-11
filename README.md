@@ -48,3 +48,14 @@ cd hotelScraper/
 scrapy crawl hotel
 ```
 ![Screenshot from 2022-01-11 11-09-02](https://user-images.githubusercontent.com/56860950/148900216-4534e692-0775-484c-8d3c-ab21c4be4e83.png)
+
+# Ignore this section if there is no error regarding Python packages.
+## Installing Python packages
+- Through Terminal:
+``` bash
+Scrapy: sudo apt install python3-scrapy
+psycopg2:
+        - sudo apt-get install libpq-dev python-dev
+        - pip install psycopg2
+```
+- If you're using PyCharm, install those Python packages from Settings. There may be an error for psycopg2. For that, globally run: sudo apt-get install libpq-dev python-dev. Then install psycopg2 from settings.
