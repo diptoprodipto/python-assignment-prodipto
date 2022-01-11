@@ -16,3 +16,11 @@ python-assignment-prodipto/
 ``` bash
 source venv/bin/activate
 ```
+- Go to the hotelScraper/ directory from the current directory by running:
+``` bash
+cd hotelScraper/
+```
+- Finally run the following command to scrape the data and store them to the database:
+``` bash
+scrapy crawl hotel
+```
