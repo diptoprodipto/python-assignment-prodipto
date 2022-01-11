@@ -5,7 +5,7 @@ import psycopg2
 class HotelSpider(scrapy.Spider):
     name = "hotel"
     start_urls = [
-        'https://www.kayak.co.in/Hyderabad-Hotels.7297.hotel.ksp'
+        'https://www.kayak.co.in/San-Francisco-Hotels.13852.hotel.ksp'
     ]
 
     def parse(self, response):
