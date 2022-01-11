@@ -27,6 +27,8 @@ psql -c "ALTER USER postgres PASSWORD 'root';"
 ![Screenshot from 2022-01-11 13-16-38](https://user-images.githubusercontent.com/56860950/148898217-e4213164-4f81-49ea-a275-345dfa6b9c08.png)
 ![Screenshot from 2022-01-11 13-18-32](https://user-images.githubusercontent.com/56860950/148898335-21750e96-96c7-40ad-bfa2-94e20d015078.png)
 
+- Create a database named: 'hotelScraper' by using pgAdmin4
+
 ### For running the project:
 - Clone the project.
 - Go to the following directory by using cd:
