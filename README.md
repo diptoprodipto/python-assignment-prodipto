@@ -8,6 +8,7 @@
 
 ## Installation process
 ### Database configuration:
+- Create a database named "hotelScraper" and import the database.sql file.
 - For installing Postgres run the following command one by one. Check this website for more info: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
 ``` bash
 sudo apt update
